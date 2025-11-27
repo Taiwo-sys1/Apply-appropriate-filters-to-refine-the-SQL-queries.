@@ -20,9 +20,8 @@ To support my organization’s security improvements, I oversee system protectio
   1. Retrieve failed login attempts that occurred after business hours:
     A potential security incident took place outside of business hours (after 18:00). All failed login attempts during this time need to be investigated. The SQL query below demonstrates how I filtered for failed login attempts that occurred after business hours.
 
-  <img src="https://i.imgur.com/6Br5Ct5.png" alt="Image description">
-
-  <img src="https://i.imgur.com/1RgtSIV.png" alt="Image description">
+<img src="https://i.imgur.com/6Br5Ct5.png" alt="Image description">
+<img src="https://i.imgur.com/1RgtSIV.png" alt="Image description">
 
 The first part of the screenshot shows my SQL query, and the second part displays a portion of the output. This query filters failed login attempts that occurred after 18:00. I began by selecting all data from the `log_in_attempts` table. Then, I applied a `WHERE` clause using the `AND` operator to refine the results to only include unsuccessful login attempts made after 18:00.
 
